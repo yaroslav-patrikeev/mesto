@@ -2,3 +2,10 @@
   line-height: 21.78px;
   margin: 16px 0 0;
 }
+
+@media (max-width: 1023px) {
+  .profile__status {
+    font-size: 14px;
+    line-height: 16.94px;
+  }
+}

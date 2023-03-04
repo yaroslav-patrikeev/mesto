@@ -4,3 +4,19 @@
   grid-template-rows: repeat(2, 361px);
   gap: 17px 20px;
 }
+
+@media (max-width: 1023px) {
+  .elements {
+  max-width: 581px;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, 361px);
+  }
+}
+
+@media (max-width: 767px) {
+  .elements {
+  max-width: 282px;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(6, 361px);
+  }
+}
