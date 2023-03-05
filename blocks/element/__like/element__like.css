@@ -3,9 +3,9 @@
   height: 19px;
   background-image: url(../../../images/like.svg);
   background-position: center;
+  background-size: cover;
   border: 0;
   background-color: white;
   cursor: pointer;
   padding: 0;
-  box-sizing: border-box;
 }

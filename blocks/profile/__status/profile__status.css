@@ -1,11 +1,16 @@
 .profile__status {
   line-height: 21.78px;
   margin: 16px 0 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 420px;
 }
 
 @media (max-width: 1023px) {
   .profile__status {
     font-size: 14px;
     line-height: 16.94px;
+    max-width: 260px;
   }
 }

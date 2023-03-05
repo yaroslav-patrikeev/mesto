@@ -5,8 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./pages/index.css">
-  <script src="./scripts/script.js" defer></script>
-  <title>Document</title>
+  <title>Mesto</title>
 </head>
 <body class="root">
   <header class="header header__position">
@@ -17,52 +16,52 @@
       <img src="./images/profile-photo.jpg" alt="Фотография" class="profile__photo">
       <div class="profile__info">
         <h1 class="profile__name">Жак-Ив Кусто</h1>
-        <button class="profile__edit-button"></button>
+        <button class="profile__edit-button button-hover"></button>
         <p class="profile__status">Исследователь океана</p>
       </div>
-      <button class="profile__add-button"></button>
+      <button class="profile__add-button button-hover"></button>
     </section>
-    <section class="elements elements__position">
+    <section class="elements elements__position" aria-label="Фотокарточки">
       <acticle class="element">
         <img src="./images/img-1.jpg" alt="Карачаевск" class="element__image">
         <div class="element__box_type_like-title">
           <h2 class="element__title">Карачаевск</h2>
-          <button class="element__like"></button>
+          <button class="element__like button-hover"></button>
         </div>
       </acticle>
       <acticle class="element">
         <img src="./images/img-2.jpg" alt="Эльбрус" class="element__image">
         <div class="element__box_type_like-title">
           <h2 class="element__title">Гора Эльбрус</h2>
-          <button class="element__like"></button>
+          <button class="element__like button-hover"></button>
         </div>
       </acticle>
       <acticle class="element">
         <img src="./images/img-3.jpg" alt="Домбай" class="element__image">
           <div class="element__box_type_like-title">
           <h2 class="element__title">Домбай</h2>
-        <button class="element__like"></button>
+        <button class="element__like button-hover"></button>
         </div>
       </acticle>
       <acticle class="element">
         <img src="./images/img-2.jpg" alt="Эльбрус" class="element__image">
         <div class="element__box_type_like-title">
           <h2 class="element__title">Гора Эльбрус</h2>
-          <button class="element__like"></button>
+          <button class="element__like button-hover"></button>
         </div>
       </acticle>
       <acticle class="element">
         <img src="./images/img-3.jpg" alt="Домбай" class="element__image">
           <div class="element__box_type_like-title">
           <h2 class="element__title">Домбай</h2>
-        <button class="element__like"></button>
+        <button class="element__like button-hover"></button>
         </div>
       </acticle>
       <acticle class="element">
         <img src="./images/img-1.jpg" alt="Карачаевск" class="element__image">
         <div class="element__box_type_like-title">
-          <h2 class="element__title">Карачаево-Ч...</h2>
-          <button class="element__like"></button>
+          <h2 class="element__title">Карачаево-Черкесия</h2>
+          <button class="element__like button-hover"></button>
         </div>
       </acticle>
     </section>
@@ -70,5 +69,17 @@
   <footer class="footer">
     <p class="footer__text">© 2020 Mesto Russia</p>
   </footer>
+  <section class="popup">
+    <div class="popup__container">
+      <button class="popup__close button-hover"></button>
+      <div class="popup__content">
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <input type="text" class="popup__input" placeholder="Имя">
+        <input type="text" class="popup__input" placeholder="О себе">
+        <button class="popup__button button-hover">Сохранить</button>
+      </div>
+    </div>
+  </section>
+<script src="./scripts/index.js"></script>
 </body>
 </html>
