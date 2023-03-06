@@ -1,16 +1,13 @@
 .profile__info {
   color: white;
   min-width: 336px;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, auto);
-  column-gap: 18px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 767px) {
   .profile__info {
   min-width: 282px;
-  margin-bottom: 36px;
-  column-gap: 10px;
+  margin-bottom: 33px;
   }
 }

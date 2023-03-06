@@ -1,12 +1,13 @@
 .profile__name {
   font-weight: 500;
   font-size: 42px;
-  line-height: 48px;
+  line-height: 94%;
   margin: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   max-width: 420px;
+  position: relative;
 }
 
 @media (max-width: 767px) {
@@ -14,5 +15,6 @@
     font-size: 27px;
     line-height: 32.68px;
     max-width: 260px;
+    text-align: end;
   }
 }

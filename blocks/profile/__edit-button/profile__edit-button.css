@@ -9,4 +9,13 @@
   background-position: center;
   cursor: pointer;
   align-self: center;
+  margin-left: 18px;
+}
+
+@media (max-width: 767px) {
+  .profile__edit-button {
+  margin-left: 10px;
+  width: 18px;
+  height: 18px;
+  }
 }
