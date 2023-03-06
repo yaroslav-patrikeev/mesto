@@ -1,10 +1,10 @@
-.header__position {
+.header_position {
   margin-top: 45px;
   margin-bottom: 40px;
 }
 
 @media (max-width: 1023px) {
-  .header__position {
+  .header_position {
   margin: 28px 0 42px;
   }
 }
