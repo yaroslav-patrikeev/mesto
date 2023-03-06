@@ -10,4 +10,4 @@
 
 ## Ссылка на GitHub Pages
 
-https://code.s3.yandex.net/web-developer/checklists-pdf/new-program/checklist-4.pdf
+[Ссылка](https://yaroslav-patrikeev.github.io/mesto/)
