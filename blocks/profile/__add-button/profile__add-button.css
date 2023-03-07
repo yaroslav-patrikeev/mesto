@@ -7,9 +7,10 @@
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
-  margin-left: auto;
   padding: 0;
   box-sizing: border-box;
+  grid-area: add-button;
+  align-self: center;
 }
 
 @media (max-width: 1023px) {
