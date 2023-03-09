@@ -6,20 +6,22 @@ const profileName = profile.querySelector('.profile__name');
 const profileStatus = profile.querySelector('.profile__status');
 
 const popupButton = popup.querySelector('.popup__button');
-const inputName = popup.querySelector('.popup__input:first-of-type');
-const inputStatus = popup.querySelector('.popup__input:last-of-type');
+const inputName = popup.querySelector('.popup__input_field_name');
+const inputStatus = popup.querySelector('.popup__input_field_status');
 const closeIcon = popup.querySelector('.popup__close');
 
-const togglePopupView = () => {
-  popup.classList.toggle('popup_opened');
-}
+editButton.addEventListener('click', function () {
+  inputName.value = profileName.innerText;
+  inputStatus.value = profileStatus.innerText;
+  popup.classList.add('popup_opened');
+});
 
-editButton.addEventListener('click', togglePopupView);
-closeIcon.addEventListener('click', togglePopupView);
-inputName.value = profileName.innerText;
-inputStatus.value = profileStatus.innerText;
-popupButton.addEventListener('click', function () {
+closeIcon.addEventListener('click', function () {popup.classList.remove('popup_opened');});
+
+const popupForm = popup.querySelector('.popup__content')
+popupForm.addEventListener('submit', function (event) {
   profileName.innerText = inputName.value;
   profileStatus.innerText = inputStatus.value;
-  togglePopupView();
+  popup.classList.remove('popup_opened');
+  event.preventDefault();
 });

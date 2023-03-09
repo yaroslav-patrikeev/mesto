@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./pages/index.css">
   <title>Mesto</title>
+  <script src="./scripts/index.js" defer></script>
 </head>
 <body class="root">
   <header class="header header_position">
@@ -16,70 +17,69 @@
       <img src="./images/profile-photo.jpg" alt="Фотография" class="profile__photo">
         <div class="profile__container">
           <h1 class="profile__name">Жак-Ив Кусто</h1>
-          <button class="profile__edit-button button-hover"></button>
+          <button type="button" class="profile__edit-button button-hover"></button>
         </div>
         <p class="profile__status">Исследователь океана</p>
-      <button class="profile__add-button button-hover"></button>
+      <button type="button" class="profile__add-button button-hover"></button>
     </section>
-    <section class="elements elements_position" aria-label="Фотокарточки">
-      <acticle class="element">
+    <ul class="elements elements_position" aria-label="Фотокарточки">
+      <li class="element">
         <img src="./images/img-1.jpg" alt="Карачаевск" class="element__image">
         <div class="element__box-like-title">
           <h2 class="element__title">Карачаевск</h2>
-          <button class="element__like button-hover"></button>
+          <button type="button" class="element__like"></button>
         </div>
-      </acticle>
-      <acticle class="element">
+      </li>
+      <li class="element">
         <img src="./images/img-2.jpg" alt="Эльбрус" class="element__image">
         <div class="element__box-like-title">
           <h2 class="element__title">Гора Эльбрус</h2>
-          <button class="element__like button-hover"></button>
+          <button type="button" class="element__like"></button>
         </div>
-      </acticle>
-      <acticle class="element">
+      </li>
+      <li class="element">
         <img src="./images/img-3.jpg" alt="Домбай" class="element__image">
           <div class="element__box-like-title">
           <h2 class="element__title">Домбай</h2>
-        <button class="element__like button-hover"></button>
+        <button type="button" class="element__like"></button>
         </div>
-      </acticle>
-      <acticle class="element">
+      </li>
+      <li class="element">
         <img src="./images/img-2.jpg" alt="Эльбрус" class="element__image">
         <div class="element__box-like-title">
           <h2 class="element__title">Гора Эльбрус</h2>
-          <button class="element__like button-hover"></button>
+          <button type="button" class="element__like"></button>
         </div>
-      </acticle>
-      <acticle class="element">
+      </li>
+      <li class="element">
         <img src="./images/img-3.jpg" alt="Домбай" class="element__image">
           <div class="element__box-like-title">
           <h2 class="element__title">Домбай</h2>
-        <button class="element__like button-hover"></button>
+        <button type="button" class="element__like"></button>
         </div>
-      </acticle>
-      <acticle class="element">
+      </li>
+      <li class="element">
         <img src="./images/img-1.jpg" alt="Карачаевск" class="element__image">
         <div class="element__box-like-title">
           <h2 class="element__title">Карачаево-Черкесия</h2>
-          <button class="element__like button-hover"></button>
+          <button type="button" class="element__like"></button>
         </div>
-      </acticle>
-    </section>
+      </li>
+    </ul>
   </main>
   <footer class="footer">
     <p class="footer__text">© 2020 Mesto Russia</p>
   </footer>
   <section class="popup">
     <div class="popup__container">
-      <button class="popup__close button-hover"></button>
-      <div class="popup__content">
+      <button type="button" class="popup__close button-hover"></button>
+      <form name="formEditProfile" class="popup__content">
         <h2 class="popup__title">Редактировать профиль</h2>
-        <input type="text" class="popup__input" placeholder="Имя">
-        <input type="text" class="popup__input" placeholder="О себе">
-        <button class="popup__button button-hover">Сохранить</button>
-      </div>
+        <input type="text" class="popup__input popup__input_field_name" placeholder="Имя">
+        <input type="text" class="popup__input popup__input_field_status" placeholder="О себе">
+        <button type="submit" class="popup__button">Сохранить</button>
+      </form>
     </div>
   </section>
-<script src="./scripts/index.js"></script>
 </body>
 </html>

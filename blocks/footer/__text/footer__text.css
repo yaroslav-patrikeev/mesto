@@ -9,3 +9,10 @@
     margin-bottom: 36px;
   }
 }
+
+@media (max-width: 767px) {
+  .footer__text {
+    font-size: 14px;
+    line-height: 16.94px;
+  }
+}

@@ -1,9 +1,9 @@
 .elements_position {
-  margin: 50px auto 67px;
+  margin: 50px 0 67px;
 }
 
 @media (max-width: 1023px) {
   .elements_position {
-    margin: 36px auto 48px;
+    margin: 36px 0 48px;
   }
 }
